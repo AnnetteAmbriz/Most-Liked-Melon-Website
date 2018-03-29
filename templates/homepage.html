@@ -1,0 +1,36 @@
+
+{% extends 'base.html' %}
+
+{% block head %}
+    <link rel="stylesheet" href="/static/css/homepage.css">
+    <title>UberMelon’s Most Loved Melons</title>
+{% endblock %}
+
+{% block body %}
+
+<div class="site-wrapper">
+    <div class="site-wrapper-inner">
+
+        <!-- <img src="/static/img/ubermelon-logo.png"> -->
+
+        <h1>UberMelon's Most Loved Melons</h1>
+
+        <p class="lead">Melons You Love</p>
+
+        <!-- <a href="/melons" class="btn btn-lg btn-primary">Shop Now</a> -->
+
+        <form action="/get-name">
+            <label for="name-input">Hi Stranger, what's your name</label>
+            <input type="text" name="name" id="name-input" required/>
+            <input type="submit" class="btn btn-lg btn-primary"/>
+        </form>
+
+    </div>
+</div>
+
+<footer>
+    <p>Copyright Ubermelon 2018. All rights reserved.</p>
+</footer>
+
+{% endblock %}
+</html>
