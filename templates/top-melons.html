@@ -1,5 +1,4 @@
 {% extends 'base.html'%}
-
 {% block head %}
     <link rel="stylesheet" href="/static/css/styles.css">
     <title>UberMelon’s Most Loved Melons</title>
@@ -17,4 +16,13 @@
 		    </div>
 	    {% endfor %}
 
+	    <form action="/love_melons" method="POST">
+            <select name="users_most_loved_melon">
+            	{% for melon in melon_dic %}
+            	<option value={{melon}}>{{melon_dic[melon]['name']}}</option>
+            	{% endfor %}
+            	</select> 
+            	<br></br>
+            <input type="submit" class="btn btn-lg btn-primary"/>
+        </form>
 {% endblock %}

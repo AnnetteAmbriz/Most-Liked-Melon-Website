@@ -1,0 +1,10 @@
+{% extends 'base.html'%}
+{% block head %}
+    <link rel="stylesheet" href="/static/css/styles.css">
+    <title>UberMelon’s Most Loved Melons</title>
+{% endblock %}
+
+{% block body %}
+	<h2>Thank you, {{session['username']}}<h2>
+	<a href="/top-melons"> Back to loving more melons </a>
+{% endblock %}
