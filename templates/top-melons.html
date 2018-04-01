@@ -16,13 +16,15 @@
 		    </div>
 	    {% endfor %}
 
-	    <form action="/love_melons" method="POST">
-            <select name="users_most_loved_melon">
+	    <form action="/love-melon" method="POST">
+	    	<br></br>
+	    	<label for="melon_love">Choose your most loved melon</label>
+            <select name="users_choice">
             	{% for melon in melon_dic %}
             	<option value={{melon}}>{{melon_dic[melon]['name']}}</option>
             	{% endfor %}
-            	</select> 
-            	<br></br>
+            </select> 
+            <br></br>
             <input type="submit" class="btn btn-lg btn-primary"/>
         </form>
 {% endblock %}

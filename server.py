@@ -37,14 +37,15 @@ def display_top_melons():
         return render_template("top-melons.html", melon_dic=MOST_LOVED_MELONS)
     return redirect("/")
 
-@app.route("/love-melon")
+@app.route("/love-melon", methods = ['POST', 'GET'])
 def increase_loved_melon():
     if request.method == 'POST':
-        users_most_loved_melon = request.form
+        users_melon = request.form['users_choice']
 
-        MOST_LOVED_MELONS[users_most_loved_melon]['num_loves'] += 1
+        print users_melon
+        MOST_LOVED_MELONS[users_melon]['num_loves'] += 1
 
-        return render_template("thank-you.html")
+    return render_template("thank-you.html")
 
 
 if __name__ == "__main__":
@@ -56,3 +57,4 @@ if __name__ == "__main__":
     #DebugToolbarExtension(app)
 
     app.run(host="0.0.0.0")
+    
