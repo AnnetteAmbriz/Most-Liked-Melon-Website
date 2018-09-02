@@ -6,7 +6,7 @@ MOST_LOVED_MELONS = {
         'num_loves': 584,
     },
     'jubi': {
-        'img': 'http://static.cosmiq.de/data/question/de/478/70/478703ee2463636b0402a881c7fd1aac_1_orig.jpg',
+        'img': '/static/img/jubliee_melon.jpg',
         'name': 'Jubilee Watermelon',
         'num_loves': 601,
     },
