@@ -1,15 +1,32 @@
-Using Flask to Create a Shopping website
-============
-
-`Instructions for running this locally`
+# Most Loved Melons Website
 
 
-#. Clone this repository. Copy the clone link. On your command line, type ``git clone <paste the repository link here>``. 
+Using Flask I created a simple website that allows you to "Like" your favorite melons. Using Jinja I display the users name and keep count displaying the total number of Likes for a given melon.
 
-#. Download the files
+## Key learnings from this project
 
-#. Unzip and copy the files into your cloned directory.
+```
 
-#. Commit and push your changes as you work. (Don't forget to put your env in your .gitignore!)
+```
+Constructing a basic Flask application with multiple routes
+Using GET vs. POST methods
+How to retrieve form input
+Building and integrating Jinja templates and extending base templates
+Creating and running a new virtual environment
+Storing information in the Session
+Using data stored in the Session
+Template Inheritance
+Styling using CSS
 
-#. 
+
+## Built With
+
+* Jinja
+* Python
+* Flask
+
+## Authors
+
+* **Annette Ambriz** 
+
+
